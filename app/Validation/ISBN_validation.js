@@ -23,7 +23,7 @@ function isValidISBN(isbn) {
   sum += last == "X" ? 10 : last - "0";
 
 
-  // of digits is divisible by 11.
+
   return sum % 11 == 0;
 }
 
