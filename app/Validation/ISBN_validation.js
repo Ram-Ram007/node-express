@@ -3,7 +3,7 @@ function isValidISBN(isbn) {
   let n = isbn.length;
   if (n != 10) return false;
 
-  // Computing weighted sum of
+  
   // first 9 digits
   let sum = 0;
   for (let i = 0; i < 9; i++) {
