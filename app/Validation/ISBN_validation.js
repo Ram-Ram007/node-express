@@ -19,7 +19,7 @@ function isValidISBN(isbn) {
   if (last != "X" && (last < "0" || last > "9")) return false;
 
 
-  // to sum, else add its value.
+  
   sum += last == "X" ? 10 : last - "0";
 
   // Return true if weighted sum
