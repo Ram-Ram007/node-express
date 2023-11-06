@@ -18,7 +18,7 @@ function isValidISBN(isbn) {
   let last = isbn[9];
   if (last != "X" && (last < "0" || last > "9")) return false;
 
-  // If last digit is 'X', add 10
+
   // to sum, else add its value.
   sum += last == "X" ? 10 : last - "0";
 
