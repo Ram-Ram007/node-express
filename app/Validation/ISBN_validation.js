@@ -4,7 +4,7 @@ function isValidISBN(isbn) {
   if (n != 10) return false;
 
   
-  // first 9 digits
+  
   let sum = 0;
   for (let i = 0; i < 9; i++) {
     let digit = isbn[i] - "0";
