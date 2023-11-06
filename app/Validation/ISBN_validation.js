@@ -1,5 +1,5 @@
 function isValidISBN(isbn) {
-  // length must be 10
+ 
   let n = isbn.length;
   if (n != 10) return false;
 
