@@ -1,8 +1,6 @@
 const { v4: uuidv4 } = require("uuid");
 const { isValidISBN } = require("./Validation/ISBN_validation");
 
-
-
 const books = [
   {
     id: 1234,
@@ -16,7 +14,6 @@ const booksRatings = [
     id: 200,
     rating: 3,
     bookId: 1234,
-   
   },
 ];
 
