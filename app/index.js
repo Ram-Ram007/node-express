@@ -17,7 +17,7 @@ const app = express();
 
 app.use(express.json());
 app.use(morgan("dev"));
-
+//To get all books
 app.get("/books", (req, res) => {
   const books = getAllBooks();
   res.send(books);
@@ -135,7 +135,6 @@ app.delete("/rating/:ratingid", (req, res) => {
   }
   return res.json(rating);
 });
-
 
 app.listen(3000, () => {
   console.log("Server running on 3000");
