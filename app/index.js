@@ -88,6 +88,7 @@ app.put("/books/:bookid", (req, res) => {
   return res.send(book);
 });
 
+//delete book
 app.delete("/books/:bookid", (req, res) => {
   const b = deleteBookById(req.params.bookid);
   if (!b) {
