@@ -120,6 +120,8 @@ const deleteRatingById = (id) => {
   booksRatings.splice(idx, 1);
   return deletedRating;
 };
+
+//export all modules
 module.exports = {
   getAllBooks,
   addBook,
