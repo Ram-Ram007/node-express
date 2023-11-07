@@ -1,8 +1,7 @@
 const { v4: uuidv4 } = require("uuid");
 const { isValidISBN } = require("./Validation/ISBN_validation");
 
-
-// data bases 
+// data bases
 const books = [
   {
     id: 1234,
@@ -19,6 +18,7 @@ const booksRatings = [
   },
 ];
 
+// get all books
 const getAllBooks = () => books;
 const addBook = ({ title, isbn }) => {
   if (isValidISBN(isbn)) {
