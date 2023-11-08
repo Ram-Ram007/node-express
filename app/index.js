@@ -24,7 +24,7 @@ app.get("/books", (req, res) => {
   res.send(books);
 });
 
-//add books
+
 app.post("/books", (req, res) => {
   const AddbookSchema = Joi.object({
     title: Joi.string().required(),
