@@ -60,7 +60,7 @@ app.post("/books/:bookid/rating", (req, res) => {
   return res.json(rating);
 });
 
-//to get single book
+
 app.get("/books/:bookid", (req, res) => {
   const book = getBookById(req.params.bookid);
   if (!book) {
