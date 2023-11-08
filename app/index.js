@@ -40,7 +40,7 @@ app.post("/books", (req, res) => {
   return res.send(book);
 });
 
-// add rating
+
 app.post("/books/:bookid/rating", (req, res) => {
   const ratingSchema = Joi.object({
     rating: Joi.number().min(0).max(5).required(),
