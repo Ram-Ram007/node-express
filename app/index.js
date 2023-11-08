@@ -18,7 +18,7 @@ const app = express();
 
 app.use(express.json());
 app.use(morgan("dev"));
-//To get all books
+
 app.get("/books", (req, res) => {
   const books = getAllBooks();
   res.send(books);
