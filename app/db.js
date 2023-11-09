@@ -121,7 +121,7 @@ const deleteRatingById = (id) => {
   return deletedRating;
 };
 
-//export all modules
+
 module.exports = {
   getAllBooks,
   addBook,
