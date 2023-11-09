@@ -18,7 +18,7 @@ const booksRatings = [
   },
 ];
 
-// get all books
+
 const getAllBooks = () => books;
 const addBook = ({ title, isbn }) => {
   if (isValidISBN(isbn)) {
