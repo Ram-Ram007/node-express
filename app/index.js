@@ -143,7 +143,7 @@ app.delete("/rating/:ratingid", (req, res) => {
   return res.json(rating);
 });
 
-//port that api run
+
 app.listen(3000, () => {
   console.log("Server running on 3000");
 });
